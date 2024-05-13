@@ -1,0 +1,464 @@
+/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+    color: yellowgreen;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+body{
+  margin: 0;
+}
+.top {
+  width: 100%;
+  height: 100px;
+  background: black;
+  float: left;
+  text-align: center;
+
+}
+.container{
+  width: 1170px;
+  margin: auto;
+}
+
+ .gio_hang{
+   float: right;
+   color: white;
+   font-size: 12px;
+   padding-top: 8px;
+   margin: 0;
+
+
+ }
+ .gio_hang p{
+   margin-top: 5px;
+   padding:0;
+
+ }
+ .gio_hang a{
+   color: white;
+ }
+ .gio_hang a:hover{
+   color: deepskyblue;
+   font-size: 15px;
+ }
+ .gio_hang a:visited{
+   color: yellow;
+ }
+ .logo{
+   text-align: center;
+   border-bottom:solid 1px #cec7c7;
+ }
+ .logo a, a:link, a:hover, a:visited{
+   color: black;
+   text-decoration: none;
+ }
+ #divleft{
+   width: 70%;
+   height: 70px;
+   float: left;
+ }
+ #divleft ul li{
+   float: left;
+   padding-right: 47px;
+   font-size: 20px;
+   display: inline-block;
+
+ }
+ /*#divleft li{*/
+ /*  display: list-item;*/
+ /*  text-align: -webkit-match-parent;*/
+
+ /*}*/
+ #divleft a{
+   color: black;
+   text-decoration: none;
+ }
+ #divleft a:hover{
+   color: #82c8ea;
+ }
+
+#divright{
+  width: 30%;
+  height: 70px;
+  float: left;
+
+}
+#divright form{
+  float: left;
+  padding-right: 0px;
+  text-align: center;
+  padding-top: 20px;
+}
+.search {
+  margin-left: 264px;
+  position: relative;
+}
+
+#btsearch{
+
+  background: url("/img/btsearch.jpg") no-repeat;
+  width: 34px;
+  height: 34px;
+  display: inline-block;
+  border: none;
+  position: absolute;
+  left: 154px;
+  top: 25px;
+
+}
+
+#txtsearch{
+  padding: 5px ;
+}
+.bnr{
+  height: 300px;
+
+}
+.bnr img{
+  width: 1523px;
+  height: 300px;
+}
+.about{
+
+  border-radius: 50px;
+  padding-left: 120px;
+  padding-top: 100px;
+  background-image: linear-gradient(#93b9c9 60%, #93a2c9, #e17f7f);;
+  height: 200px;
+  width: 1399px;
+  padding-bottom: 100px;
+
+
+}
+.about .ab{
+  float: left;
+  padding-left: 40px;
+  height: 225px;
+  width: 350px;
+}
+.ab img{
+  width: 350px;
+  height: 100%;
+  border-radius: 20px;
+}
+.product {
+  margin-top: 80px;
+  height: 400px;
+}
+/*.product .container{*/
+
+/*  width: 255px ;*/
+/*  height: 255px;*/
+/*}*/
+.oneproduct{
+  border: solid 1px #737171;
+  border-radius: 12px;
+
+  float: left;
+  text-align: center;
+  margin-left: 33px;
+  margin-top: 20px;
+
+}
+ .hinhproduct {
+
+   height: 255px;
+   width: 254px;
+   border-radius: 12px;
+}
+.hinhproduct img{
+
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.proinfo a{
+  font-size: 20px;
+  margin-top:0px;
+
+}
+.proinfo a:hover{
+  color: yellow;
+}
+.proinfo h5{
+  margin: 10px;
+}
+.pro-price{
+  background: black;
+  color: white;
+}
+.sale-off{
+  background: black;
+  color: white;
+  border-radius: 12px;
+}
+.info{
+  float: left;
+  width: 25%;
+  height: auto;
+}
+.info ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  color: gray;
+}
+.info ul li a:link, .info ul li a:visited{
+  color: gray;
+}
+.container .info{
+  margin-top: 85px;
+}
+/*#fb{*/
+/*  background: url("/img/icons/icon-s.png");*/
+
+/*}*/
+span .social{
+  width: 39px;
+  height: 36px;
+  display: inline-block;
+}
+
